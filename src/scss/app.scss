@@ -19,11 +19,19 @@ html {
   background: $background;
 }
 
-.main {
-  height: 100vh;
+.container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10rem;
-  flex-flow: column;
+  flex-direction: row;
+  height: 100vh;
+  background: purple;
+  .toolbar {
+    position: fixed;
+    height: 80px;
+    background: red;
+    width: 88.3%;
+  }
+  .main {
+    background: green;
+    width: 100%;
+  }
 }
